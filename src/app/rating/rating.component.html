@@ -1,0 +1,14 @@
+<h3>
+  {{ rating.name }}
+</h3>
+<p>{{ rating.content }}</p>
+
+<!-- <div>
+  <span *ngFor="let i of [1, 2, 3, 4, 5]">
+    {{ i <= rating.rate ? '&#9733;' : '&#9734;' }}
+  </span>
+</div> -->
+<div>
+  <span *ngFor="let i of [1, 2, 3, 4, 5]" [innerHTML]="i <= rating.rate ? '&#9733;' : '&#9734;'">
+  </span>
+</div>
