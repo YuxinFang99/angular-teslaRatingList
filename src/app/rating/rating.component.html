@@ -1,3 +1,7 @@
+<div>
+  <span *ngFor="let i of [1, 2, 3, 4, 5]" [innerHTML]="i <= rating.rate ? '&#9733;' : '&#9734;'">
+  </span>
+</div>
 <h3>
   {{ rating.name }}
 </h3>
@@ -8,7 +12,3 @@
     {{ i <= rating.rate ? '&#9733;' : '&#9734;' }}
   </span>
 </div> -->
-<div>
-  <span *ngFor="let i of [1, 2, 3, 4, 5]" [innerHTML]="i <= rating.rate ? '&#9733;' : '&#9734;'">
-  </span>
-</div>
